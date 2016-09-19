@@ -1,17 +1,17 @@
 # hbrc_python
 采用Tornado框架，安装Tornado包
-pip install tornado
+pip install tornado   
 
-#进程监控程序  Supervisor
-满足的需求是：我现在有一个进程需要每时每刻不断的跑，但是这个进程又有可能由于各种原因有可能中断。
-当进程中断的时候我希望能自动重新启动它：Supervisor
-#安装很简单
-pip install supervisor
+#进程监控程序  Supervisor   
+满足的需求是：我现在有一个进程需要每时每刻不断的跑，但是这个进程又有可能由于各种原因有可能中断。   
+当进程中断的时候我希望能自动重新启动它：Supervisor   
+#安装很简单   
+pip install supervisor   
 
 #2. 配置
-可以用以下命令生成配置文件：
-  echo_supervisord_conf > etc/supervisord.conf
-配置文件生成之后，在最末尾加上这几行东西：
+可以用以下命令生成配置文件：   
+  echo_supervisord_conf > etc/supervisord.conf   
+配置文件生成之后，在最末尾加上这几行东西：   
 
 
 [program:hello]
