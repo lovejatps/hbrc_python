@@ -25,17 +25,17 @@ OK，完成配置。
 启动 supervisor：
 supervisord
 如果报错，请检查报错信息，比如：
-Error: No config file found at default paths (
-/root/nmapp2_venv/etc/supervisord.conf,
-/root/nmapp2_venv/supervisord.conf,
-supervisord.conf,
-etc/supervisord.conf,
-/etc/supervisord.conf); use the -c option to specify a config file at a different path
-For help, use /root/nmapp2_venv/bin/supervisord -h
-在上面的默认目录中，丢一个 supervisord.conf 即可。
+Error: No config file found at default paths (  
+/root/nmapp2_venv/etc/supervisord.conf,  
+/root/nmapp2_venv/supervisord.conf,   
+supervisord.conf,   
+etc/supervisord.conf,   
+/etc/supervisord.conf); use the -c option to specify a config file at a different path   
+For help, use /root/nmapp2_venv/bin/supervisord -h   
+在上面的默认目录中，丢一个 supervisord.conf 即可。   
 
-如果报 http://localhost:9001 refused connection 错误，那是因为 supervisord 没有启动的原因。只要放好 supervisord.conf 文件，即可解决问题。
+如果报 http://localhost:9001 refused connection 错误，那是因为 supervisord 没有启动的原因。只要放好 supervisord.conf    文件，即可解决问题。   
 
-supervisorctl start all 开启全部服务。
+supervisorctl start all 开启全部服务。   
 
-如果修改了配置文件，supervisorctl reload 重启。修改了 Supervisor 的配置，也可以用 supervisorctl reread 来重新载入，或用 supervisorctl reload 来载入新配置并重启所有子进程。直接运行 supervisorctl 的话，可以进入命令行模式操作。
+如果修改了配置文件，supervisorctl reload 重启。修改了 Supervisor 的配置，也可以用 supervisorctl reread 来重新载入，或用 supervisorctl reload 来载入新配置并重启所有子进程。直接运行 supervisorctl 的话，可以进入命令行模式操作。   
